@@ -1,33 +1,37 @@
-caesar-cipher-python
+# Python Projects
 
-A simple Python program that encrypts an English text using a Caesar cipher, where each word is shifted by the length of that word (letters only).
-Uppercase letters remain uppercase, lowercase letters remain lowercase, and non-letter characters are not changed.
+This repository contains two small Python projects: a Caesar cipher program and a password generator. They were made for practice and to improve basic programming skills.
 
-How it works
+---
 
-For every word:
+## Caesar Cipher (Python)
 
-Count how many alphabetic characters it contains → this is the shift value.
-Shift each letter forward in the alphabet by that amount (cyclic shift).
-Preserve the original letter case.
-Keep punctuation and other non-letter symbols unchanged.
+A simple program that encrypts English text using a Caesar cipher. Each word is shifted by the number of letters in that word.
 
-Password Generator
+### How it works
+- Each word is processed separately  
+- The shift value is the number of letters in the word  
+- Letters are shifted forward in the alphabet (cyclic)  
+- Uppercase stays uppercase, lowercase stays lowercase  
+- Non-letter characters (spaces, punctuation, etc.) are not changed  
 
-A simple Python program that generates secure passwords based on user preferences.
+---
 
-Features
+## Password Generator (Python)
 
-Generate multiple passwords
-Custom password length
-Optional inclusion of:
-digits (0–9)
-lowercase letters (a–z)
-uppercase letters (A–Z)
-symbols (!#$%&*+-=?@^_)
-Option to exclude ambiguous characters (il1Lo0O)
-How it works
+A simple program that generates random passwords based on user preferences.
 
-The user selects password settings.
-The program builds a pool of allowed characters.
-Passwords are generated randomly using the selected character set.
+### Features
+- Generate one or multiple passwords  
+- Set custom password length  
+- Choose character types:
+  - lowercase letters
+  - uppercase letters
+  - numbers
+  - symbols  
+- Option to exclude similar/ambiguous characters (like il1Lo0O)
+
+### How it works
+- User selects password options  
+- Program builds a set of allowed characters  
+- Passwords are generated randomly from that set  
